@@ -23,44 +23,38 @@ namespace ÄtOchSovKlocka
         public Timer()
         {
             
-
             InitializeComponent();
-            ClockValue.Text = DateTime.Now.ToString("HH:MM:ss");
-
+            
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            ClockValue.Text = DateTime.Now.ToString("HH:MM:ss");
-
-        }
-
+               
         private void workButton(object sender, EventArgs e)
         {
+            breakTimer.Stop();
             ss = 3120;
-            this.timer2.Enabled = true;
+            this.workTimer.Enabled = true;
 
         }
 
         private void stopOne(object sender, EventArgs e)
         {
-            timer2.Stop();
+            workTimer.Stop();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+            
         }
 
         private void breakButton(object sender, EventArgs e)
         {
+            workTimer.Stop();
             ss = 960;
-            this.timer3.Enabled = true;
+            this.breakTimer.Enabled = true;
         }
 
         private void stopTwo(object sender, EventArgs e)
         {
-            timer3.Stop();
+            breakTimer.Stop();
         }
 
 
@@ -68,7 +62,7 @@ namespace ÄtOchSovKlocka
         private void timer2_Tick(object sender, EventArgs e)
         {
 
-            timer3.Stop();
+            breakTimer.Stop();
             ss--;
             mm = ss / 60;
             ss--;
@@ -79,16 +73,16 @@ namespace ÄtOchSovKlocka
             }
             if (ss % 60 < 10)
             {
-                breakValue.Text = ($"{mm}:0{temp}");
+                workValue.Text = ($"{mm}:0{temp}");
             }
             else
             {
-                breakValue.Text = ($"{mm}:{temp}");
+                workValue.Text = ($"{mm}:{temp}");
             }
             if (ss == 0)
             {
                
-                timer3.Stop();
+                workTimer.Stop();
                 for (int i = 0; i < 10; i++)
                 {
                     AudioPlayer.PlaySound(selection);
@@ -100,7 +94,7 @@ namespace ÄtOchSovKlocka
         {
 
 
-            timer2.Stop();
+            workTimer.Stop();
             ss--;
             mm = ss / 60;
             if (ss > 60)
@@ -118,7 +112,7 @@ namespace ÄtOchSovKlocka
             if (ss == 0)
             {
                                 
-                timer3.Stop();
+                breakTimer.Stop();
                 for (int i = 0; i < 10; i++)
                 {
                     AudioPlayer.PlaySound(selection);
