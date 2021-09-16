@@ -52,9 +52,10 @@ namespace ÄtOchSovKlocka
             this.startWorkButton.BackColor = System.Drawing.Color.Black;
             this.startWorkButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.startWorkButton.ForeColor = System.Drawing.Color.SteelBlue;
-            this.startWorkButton.Location = new System.Drawing.Point(83, 200);
+            this.startWorkButton.Location = new System.Drawing.Point(95, 267);
+            this.startWorkButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.startWorkButton.Name = "startWorkButton";
-            this.startWorkButton.Size = new System.Drawing.Size(179, 75);
+            this.startWorkButton.Size = new System.Drawing.Size(205, 100);
             this.startWorkButton.TabIndex = 0;
             this.startWorkButton.Text = "Start Work";
             this.startWorkButton.UseVisualStyleBackColor = false;
@@ -65,9 +66,10 @@ namespace ÄtOchSovKlocka
             this.startBreakButton.BackColor = System.Drawing.Color.Black;
             this.startBreakButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.startBreakButton.ForeColor = System.Drawing.Color.SteelBlue;
-            this.startBreakButton.Location = new System.Drawing.Point(470, 200);
+            this.startBreakButton.Location = new System.Drawing.Point(537, 267);
+            this.startBreakButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.startBreakButton.Name = "startBreakButton";
-            this.startBreakButton.Size = new System.Drawing.Size(179, 75);
+            this.startBreakButton.Size = new System.Drawing.Size(205, 100);
             this.startBreakButton.TabIndex = 0;
             this.startBreakButton.Text = "Start Break";
             this.startBreakButton.UseVisualStyleBackColor = false;
@@ -78,9 +80,10 @@ namespace ÄtOchSovKlocka
             this.stopOneButton.BackColor = System.Drawing.Color.Black;
             this.stopOneButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.stopOneButton.ForeColor = System.Drawing.Color.SteelBlue;
-            this.stopOneButton.Location = new System.Drawing.Point(269, 200);
+            this.stopOneButton.Location = new System.Drawing.Point(307, 267);
+            this.stopOneButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.stopOneButton.Name = "stopOneButton";
-            this.stopOneButton.Size = new System.Drawing.Size(81, 75);
+            this.stopOneButton.Size = new System.Drawing.Size(93, 100);
             this.stopOneButton.TabIndex = 1;
             this.stopOneButton.Text = "Stop";
             this.stopOneButton.UseVisualStyleBackColor = false;
@@ -91,9 +94,10 @@ namespace ÄtOchSovKlocka
             this.stopTwoButton.BackColor = System.Drawing.Color.Black;
             this.stopTwoButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.stopTwoButton.ForeColor = System.Drawing.Color.SteelBlue;
-            this.stopTwoButton.Location = new System.Drawing.Point(655, 200);
+            this.stopTwoButton.Location = new System.Drawing.Point(749, 267);
+            this.stopTwoButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.stopTwoButton.Name = "stopTwoButton";
-            this.stopTwoButton.Size = new System.Drawing.Size(81, 75);
+            this.stopTwoButton.Size = new System.Drawing.Size(93, 100);
             this.stopTwoButton.TabIndex = 1;
             this.stopTwoButton.Text = "Stop";
             this.stopTwoButton.UseVisualStyleBackColor = false;
@@ -102,12 +106,13 @@ namespace ÄtOchSovKlocka
             // workValue
             // 
             this.workValue.BackColor = System.Drawing.Color.Black;
-            this.workValue.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.workValue.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.workValue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.workValue.Location = new System.Drawing.Point(98, 27);
+            this.workValue.Location = new System.Drawing.Point(112, 36);
+            this.workValue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.workValue.Multiline = true;
             this.workValue.Name = "workValue";
-            this.workValue.Size = new System.Drawing.Size(226, 116);
+            this.workValue.Size = new System.Drawing.Size(258, 153);
             this.workValue.TabIndex = 2;
             this.workValue.Text = "52:00";
             this.workValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -115,12 +120,13 @@ namespace ÄtOchSovKlocka
             // breakValue
             // 
             this.breakValue.BackColor = System.Drawing.Color.Black;
-            this.breakValue.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.breakValue.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.breakValue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.breakValue.Location = new System.Drawing.Point(485, 27);
+            this.breakValue.Location = new System.Drawing.Point(554, 36);
+            this.breakValue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.breakValue.Multiline = true;
             this.breakValue.Name = "breakValue";
-            this.breakValue.Size = new System.Drawing.Size(226, 116);
+            this.breakValue.Size = new System.Drawing.Size(258, 153);
             this.breakValue.TabIndex = 2;
             this.breakValue.Text = "16:00";
             this.breakValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -137,11 +143,13 @@ namespace ÄtOchSovKlocka
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.selectRingToneToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(783, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(895, 30);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -152,36 +160,37 @@ namespace ÄtOchSovKlocka
             this.toolStripMenuItem3,
             this.toolStripMenuItem4});
             this.selectRingToneToolStripMenuItem.Name = "selectRingToneToolStripMenuItem";
-            this.selectRingToneToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.selectRingToneToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
             this.selectRingToneToolStripMenuItem.Text = "Select ring tone";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem2.Text = "1";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem3.Text = "2";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem4.Text = "3";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // Timer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(783, 314);
+            this.ClientSize = new System.Drawing.Size(895, 419);
             this.Controls.Add(this.breakValue);
             this.Controls.Add(this.workValue);
             this.Controls.Add(this.stopTwoButton);
@@ -191,9 +200,9 @@ namespace ÄtOchSovKlocka
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Timer";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Timer";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

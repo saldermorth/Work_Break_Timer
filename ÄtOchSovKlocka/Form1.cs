@@ -14,42 +14,32 @@ namespace ÄtOchSovKlocka
 {
     public partial class Timer : Form
     {
-
-
         int mm;
         int ss;
         int temp;
         int selection = 1;
         public Timer()
-        {
-            
-            InitializeComponent();
-            
+        {            
+            InitializeComponent();            
         }
                
         private void workButton(object sender, EventArgs e)
         {
             breakTimer.Stop();
             ss = 3120;
-            this.workTimer.Enabled = true;
-
+            workTimer.Enabled = true;
         }
 
         private void stopOne(object sender, EventArgs e)
         {
             workTimer.Stop();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
+        }             
 
         private void breakButton(object sender, EventArgs e)
         {
             workTimer.Stop();
             ss = 960;
-            this.breakTimer.Enabled = true;
+            breakTimer.Enabled = true;
         }
 
         private void stopTwo(object sender, EventArgs e)
@@ -63,7 +53,7 @@ namespace ÄtOchSovKlocka
         {
 
             breakTimer.Stop();
-            ss--;
+            
             mm = ss / 60;
             ss--;
             mm = ss / 60;
